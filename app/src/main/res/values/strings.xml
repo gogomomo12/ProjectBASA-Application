@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Project BASA</string>
+    <string name="server_api">https://projectbasawebserver-987123.loca.lt/</string>
+
+    <string name="db_name">main_db</string>
+    <string name="name_table">name</string>
+</resources>

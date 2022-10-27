@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center"
+            android:background="?attr/negativeColor"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:scaleType="fitXY"
+                app:tint="@color/white"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/close_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Uh oh."/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:id="@+id/errorMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Error message"/>
+
+
+            <Button
+                android:background="@drawable/circular_negative_button"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:id="@+id/restartApplication"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restart Application"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

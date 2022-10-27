@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="mainBg" format="reference"/>
+    <attr name="mainBg2" format="reference"/>
+    <attr name="primaryColor" format="reference"/>
+    <attr name="lightColor" format="reference"/>
+    <attr name="secondaryColor" format="reference"/>
+    <attr name="negativeColor" format="reference"/>
+</resources>

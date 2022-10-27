@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_button2"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    tools:context=".ReadingVoiceRecordActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Level"
+            android:textSize="20sp"/>
+
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:id="@+id/levelDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/wordDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="@drawable/chat_bg"
+        android:gravity="center"
+        android:text="Test Word"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="00:00"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/recordButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="onClickStartRecord"
+            android:scaleType="fitXY"
+            android:src="@drawable/audio_icon"
+            app:tint="?attr/secondaryColor" />
+
+        <ImageView
+            android:id="@+id/stopButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="onClickStopRecord"
+            android:scaleType="fitXY"
+            android:src="@drawable/stop_icon"
+            app:tint="?attr/secondaryColor" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickSubmit"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+</LinearLayout>
